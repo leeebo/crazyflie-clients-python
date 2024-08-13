@@ -726,10 +726,10 @@ class FlightTab(TabToolbox, flight_tab_class):
         self._helper.cf.param.set_value("ring.headlightEnable", str(state))
 
     def _all_params_updated(self):
-        self._ring_populate_dropdown()
+        #self._ring_populate_dropdown()
         self._populate_assisted_mode_dropdown()
         self._update_flight_commander(True)
-        self._update_supervisor_and_arming(True)
+        #self._update_supervisor_and_arming(True)
 
     def _ring_populate_dropdown(self):
         try:
@@ -785,8 +785,8 @@ class FlightTab(TabToolbox, flight_tab_class):
         if index > -1:
             i = self._led_ring_effect.itemData(index)
             logger.debug("Changed effect to {}".format(i))
-            if i != int(self._helper.cf.param.values["ring"]["effect"]):
-                self._helper.cf.param.set_value("ring.effect", str(i))
+            # if i != int(self._helper.cf.param.values["ring"]["effect"]):
+            #     self._helper.cf.param.set_value("ring.effect", str(i))
 
     def _ring_effect_updated(self, name, value):
         if self._helper.cf.param.is_updated:

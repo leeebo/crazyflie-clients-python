@@ -116,7 +116,7 @@ class MainUI(QtWidgets.QMainWindow, main_window_class):
             pass
 
         self.cf = Crazyflie(ro_cache=None,
-                            rw_cache=cfclient.config_path + "/cache")
+                            rw_cache=None)
 
         cflib.crtp.init_drivers()
 
