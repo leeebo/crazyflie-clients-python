@@ -8,8 +8,28 @@ The client requires the folked [cflib](https://github.com/leeebo/crazyflie-lib-p
 If you want to develop with the lib too, follow the cflib readme to install it.
 
 ## Installation
-See the [installation instructions](docs/installation/install.md) in the GitHub docs folder.
 
-## Official Documentation
+Clone repository:
 
-Check out the [Bitcraze crazyflie-client-python documentation](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/) on website.
+```bash
+git clone https://github.com/qljz1993/crazyflie-clients-python.git
+cd crazyflie-clients-python
+```
+
+Install the client from source:
+
+```bash
+pip3 install -e .
+```
+
+## Run
+
+```bash
+cfclient
+```
+
+## Documentation
+
+Check out https://espressif-docs.readthedocs-hosted.com/projects/espressif-esp-drone/en/latest/gettingstarted.html
+
+then Check out the [Bitcraze crazyflie-client-python documentation](https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/) on website.
